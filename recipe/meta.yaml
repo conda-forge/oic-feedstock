@@ -1,5 +1,5 @@
 {% set name = "oic" %}
-{% set version = "0.13.1" %}
+{% set version = "0.14.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e6cf115fa74c030c1fe4325d7ea980b00a1c492632cf1dad1aee93234810118a
+  sha256: b276b7072c6817680b54925e3a664d036415a00a524b6847a6bfe55f3135059f
 
 build:
   number: 0
