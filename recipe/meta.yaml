@@ -29,7 +29,7 @@ requirements:
     - mako
     - cryptography
     - defusedxml
-    - typing_extensions  # [py<38]
+    - typing_extensions
   run_constrained:
     - python-ldap
 
