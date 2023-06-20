@@ -14,7 +14,7 @@ build:
   noarch: python
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv '
   entry_points:
-    oic-client-management = oic.utils.client_management:run
+    - oic-client-management = oic.utils.client_management:run
 
 requirements:
   host:
