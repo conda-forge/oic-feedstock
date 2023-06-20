@@ -44,22 +44,6 @@ test:
     - oic.utils.rp
     - oic.utils.userinfo
 
-outputs:
-  - name: oic
-
-  - name: oic_ldap_authn
-    requirements:
-      host:
-        - python
-      run:
-        - python
-        - python-ldap
-        - {{ pin_subpackage('oic', exact=True) }}
-    test:
-      imports:
-        - oic.utils.authn.ldapc
-        - oic.utils.userinfo.ldap_info
-
 about:
   home: https://github.com/OpenIDC/pyoidc/
   license: Apache-2.0
