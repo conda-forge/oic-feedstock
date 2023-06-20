@@ -57,7 +57,8 @@ outputs:
         - {{ pin_subpackage('oic', exact=True) }}
     test:
       imports:
-        - oic_ldap_authn
+        - oic.utils.authn.ldapc
+        - oic.utils.userinfo.ldap_info
 
 about:
   home: https://github.com/OpenIDC/pyoidc/
