@@ -19,30 +19,49 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7,<4
+    - python >=3.7
   run:
     - requests
     - pycryptodomex
-    - pydantic
+    - pydantic-settings
     - pyjwkest >=1.3.6
-    - python >=3.7,<4
     - mako
     - cryptography
     - defusedxml
-    - typing_extensions
+    - typing-extensions  # [py<3.8]
+    - python >=3.7
   run_constrained:
-    - python-ldap
+    - cherrypy==3.2.4  # develop
+    - pyopenssl  # develop
+    - responses  # tests
+    - testfixtures  # tests
+    - pytest  # tests
+    - freezegun  # tests
+    - sphinx  # docs
+    - sphinx-autobuild  # docs
+    - alabaster  # docs
+    - autodoc-pydantic>=2.0.0  # docs
+    - pylama  # quality
+    - isort  # quality
+    - eradicate  # quality
+    - mypy  # quality
+    - black  # quality
+    - bandit  # quality
+    - readme_renderer  # quality
+    - python-ldap  # ldap-authn
+    - beaker  # examples
+
 
 test:
   imports:
     - oic
-    - oic.extension
     - oic.oauth2
     - oic.oic
     - oic.utils
     - oic.utils.authn
-    - oic.utils.rp
     - oic.utils.userinfo
+    - oic.utils.rp
+    - oic.extension
 
 about:
   home: https://github.com/OpenIDC/pyoidc/
