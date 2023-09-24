@@ -19,7 +19,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python
   run:
     - requests
     - pycryptodomex
@@ -28,10 +28,10 @@ requirements:
     - mako
     - cryptography
     - defusedxml
-    - typing-extensions  # [py<3.8]
-    - python >=3.7
+    - typing-extensions
+    - python
   run_constrained:
-    - cherrypy==3.2.4  # develop
+    - cherrypy ==3.2.4  # develop
     - pyopenssl  # develop
     - responses  # tests
     - testfixtures  # tests
@@ -40,7 +40,7 @@ requirements:
     - sphinx  # docs
     - sphinx-autobuild  # docs
     - alabaster  # docs
-    - autodoc-pydantic>=2.0.0  # docs
+    - autodoc-pydantic >=2.0.0  # docs
     - pylama  # quality
     - isort  # quality
     - eradicate  # quality
